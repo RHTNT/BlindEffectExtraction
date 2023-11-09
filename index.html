@@ -10,12 +10,17 @@
             margin-right: auto; /* Automatische Anpassung des rechten Abstands */
         }
         .audio-container {
-            float: right; /* Move the container to the right */
-            margin-left: 20px; /* Add some space on the left for the label */
             display: flex;
-            flex-direction: row; /* Anordnung in einer Zeile */
-            gap: 20px; /* Abstand zwischen den Audioelementen */
+            justify-content: space-between; /* Adjust the space between the elements */
+            margin-bottom: 20px; /* Add some space between the rows */
         }
+
+        .audio-group {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px; /* Adjust the space between the groups */
+        }
+     
              .largefont {
             font-size: 24px; /* Wähle hier die gewünschte Schriftgröße in Pixeln */
         }
@@ -47,29 +52,28 @@ Listening tests with eight subjects indicate excellent quality of the the blind 
 <p class="largefont">Demucs (Effect Removal) </p>
 </body>
    
-  <div class="audio-container">
-    <div>
+<div class="audio-container">
+    <div class="audio-group">
         <h1>Input </h1>
-  <audio controls>
-  <source src="sound.wav" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
+        <audio controls>
+            <source src="sound.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
     </div>
-       <div>
-           <h1>Output</h1>
-  <audio controls>
-  <source src="sound.wav" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
-       </div>
-    <div>
-              <h1>Target</h1>
-           <audio controls>
-  <source src="sound.wav" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
+    <div class="audio-group">
+        <h1>Output</h1>
+        <audio controls>
+            <source src="sound.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
     </div>
-    
+    <div class="audio-group">
+        <h1>Target</h1>
+        <audio controls>
+            <source src="sound.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 </div>
 
       <div class="audio-container">
