@@ -1,3 +1,7 @@
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://rhtnt.github.io"
+
 theme: jekyll-theme-minimal
 title: Test Homepage
 description: Bookmark this to keep an eye on my project updates!
